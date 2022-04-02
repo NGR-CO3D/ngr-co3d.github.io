@@ -1,0 +1,24 @@
+# Site settings
+title: NGR-CO3D
+
+# Urls
+url: "https://ngr-co3d.github.io" # the base hostname & protocol for your site
+#url: "http://locahost:4000" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+
+# Social Media
+#twitter: ""
+#facebook: ""
+#youtube:  ""
+
+# Handling Reading
+safe: true
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Build settings
+permalink: /:categories/:title/
+markdown: kramdown
+
+plugins_dir:
+  - jekyll-feed
+  - jekyll-redirect-from

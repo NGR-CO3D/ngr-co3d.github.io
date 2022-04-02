@@ -1,0 +1,47 @@
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+
+<head>
+    <title>{% if page.title %}{{ site.title }}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="" />
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="css/skel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-wide.css">
+    <link rel="stylesheet" href="css/style-noscript.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/jquery.scrolly.min.js"></script>
+    <script src="js/jquery.scrollgress.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+
+    <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/
+          if you update and want to force Facebook to re-scrape. -->
+    <meta property="og:image" content="https://ngr-co3d.github.io/images/og_image.png"/>
+    <meta property="og:title" content="ECCV 2022 NGR-CO3D Workshop" />
+    <meta property="og:description" content="This workshop aims to bring together the neural geometry and graphics communities to discuss recent advances and future challenges." />
+    <!-- Twitter automatically scrapes this. Go to https://cards-dev.twitter.com/validator?
+        if you update and want to force Twitter to re-scrape. -->
+    <meta property="twitter:card"          content="summary" />
+    <meta property="twitter:title"         content="ECCV 2022 NGR-CO3D Workshop" />
+    <meta property="twitter:description"   content="This workshop aims to bring together the neural geometry and graphics communities to discuss recent advances and future challenges." />
+    <meta property="twitter:image"         content="https://ngr-co3d.github.io/images/og_image.png" />
+
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+</head>

@@ -1,0 +1,22 @@
+<!-- Footer -->
+<footer id="footer">
+
+    <ul class="icons">
+            {% if site.youtube != null %}
+                <li style="color:black;"><a href="{{site.youtube}}" class="icon circle fa-youtube-play"><span class="label"></span></a></li>
+            {% endif %}
+            
+            {% if site.twitter != null %}
+                <li style=" color: white;"><a href="https://twitter.com/{{site.twitter}}" class="icon circle fa-twitter"><span class="label"></span></a></li>
+            {% endif %}
+            
+            {% if site.facebook != null %}
+                <li style=" color: white;"><a href="https://www.facebook.com/{{site.facebook}}" class="icon circle fa-facebook"><span class="label"></span></a></li>
+            {% endif %}
+    </ul>
+
+    <ul class="copyright">
+        <li>&copy; Christian Rupprecht {{ 'now' | date: "%Y" }}. Adapted from <a href="https://dynavis.github.io/">DynaVis</a></li>
+    </ul>
+
+</footer>
