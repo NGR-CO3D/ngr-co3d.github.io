@@ -1,5 +1,5 @@
 <!-- Banner -->		
-<section id="banner" {% if page.banner %}style="background-image: url({{ page.banner }})"{% endif %}>
+<section id="banner" {%if page.banner_video %}style="padding: 0%;"{% endif %} {% if page.banner %}style="background-image: url({{ page.banner }})"{% endif %}>
 
     <!--
         ".inner" is set up as an inline-block so it automatically expands
@@ -8,17 +8,24 @@
         appropriate (<br />).
     -->
     
-   
-    <div class="inner">
-        <header>
-            <h2>NGR-CO3D</h2>
-        </header>
-        <p>{{ page.title}}
-        <br />
-        {{ page.date }}
-        <br />
-        {{ page.location }}
-        <br />
+    <div class="video_container">
+        {% if page.banner_video %}
+        <video autoplay muted loop style="object-fit: cover; position: absolute; top: 0; left: 0; width: 100%; height:100%;">
+            <source src="{{ page.banner_video }}" type="video/mp4">
+        </video>
+        {% endif %}
+
+        <div class="inner">
+            <header>
+                <h2>NGR-CO3D</h2>
+            </header>
+            <p>{{ page.title}}
+            <br />
+            {{ page.date }}
+            <br />
+            {{ page.location }}
+            <br />
+        </div>
     </div>
 
 </section>
