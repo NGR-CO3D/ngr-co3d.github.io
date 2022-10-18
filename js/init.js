@@ -65,12 +65,12 @@
 	});
 
 	function convertDateAndTimezone(timeStr) {
-        var newDate = new Date("2021-10-11T"+timeStr+":00.000Z");
+        var newDate = new Date("2022-10-24T"+timeStr+":00.000Z");
         return newDate.toString();
     }
 
 	function convertTime(timeStr) {
-        var newDate = new Date("2021-10-11T"+timeStr+":00.000Z");
+        var newDate = new Date("2022-10-24T"+timeStr+":00.000Z");
         return newDate.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: false});   
     }
 
